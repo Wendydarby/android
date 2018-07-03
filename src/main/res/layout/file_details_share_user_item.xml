@@ -37,7 +37,7 @@
             android:layout_marginStart="@dimen/standard_margin"
             android:layout_marginTop="@dimen/standard_half_margin"
             android:contentDescription="@string/user_icon"
-            android:src="@drawable/ic_user" />
+            android:src="@drawable/user"/>
 
         <TextView
             android:id="@+id/name"

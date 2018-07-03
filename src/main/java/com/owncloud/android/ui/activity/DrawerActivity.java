@@ -30,6 +30,7 @@ import android.accounts.AccountManagerFuture;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -710,7 +711,7 @@ public abstract class DrawerActivity extends ToolbarActivity implements DisplayU
                         Menu.NONE,
                         MENU_ORDER_ACCOUNT,
                         account.name)
-                        .setIcon(R.drawable.ic_user);
+                        .setIcon(R.drawable.user);
             }
         }
 
@@ -720,7 +721,7 @@ public abstract class DrawerActivity extends ToolbarActivity implements DisplayU
                 getResources().getString(R.string.prefs_add_account)).setIcon(R.drawable.ic_account_plus);
         mNavigationView.getMenu().add(R.id.drawer_menu_accounts, R.id.drawer_menu_account_manage,
                 MENU_ORDER_ACCOUNT_FUNCTION,
-                getResources().getString(R.string.drawer_manage_accounts)).setIcon(R.drawable.ic_settings);
+                getResources().getString(R.string.drawer_manage_accounts)).setIcon(R.drawable.settings);
 
         // adding sets menu group back to visible, so safety check and setting invisible
         showMenu();
@@ -942,7 +943,7 @@ public abstract class DrawerActivity extends ToolbarActivity implements DisplayU
             for (int i = 0; i < mNavigationView.getMenu().size(); i++) {
                 MenuItem menuItem = mNavigationView.getMenu().getItem(i);
                 if (menuItem.getIcon() != null) {
-                    menuItem.getIcon().clearColorFilter();
+                    menuItem.getIcon().setColorFilter(Color.GRAY, PorterDuff.Mode.SRC_ATOP);
                     menuItem.setTitle(Html.fromHtml("<font color='#000000'>" + menuItem.getTitle() + "</font>"));
                 }
             }
