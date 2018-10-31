@@ -163,7 +163,7 @@ public class AccountListAdapter extends ArrayAdapter<AccountListItem> implements
         } catch (Exception e) {
             Log_OC.e(TAG, "Error calculating RGB value for account list item.", e);
             // use user icon as a fallback
-            viewHolder.imageViewItem.setImageResource(R.drawable.user);
+            viewHolder.imageViewItem.setImageResource(R.drawable.ic_user);
         }
     }
 

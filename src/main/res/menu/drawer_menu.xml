@@ -129,7 +129,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_contacts"
-            android:icon="@drawable/user"
+            android:icon="@drawable/ic_user"
             android:orderInCategory="3"
             android:title="@string/actionbar_contacts"/>
         <item

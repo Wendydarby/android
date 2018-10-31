@@ -648,7 +648,7 @@ class ContactListAdapter extends RecyclerView.Adapter<ContactListFragment.Contac
                             )
                     );
                 } catch (Exception e) {
-                    holder.getBadge().setImageResource(R.drawable.user);
+                    holder.getBadge().setImageResource(R.drawable.ic_user);
                 }
             }
 
@@ -679,7 +679,7 @@ class ContactListAdapter extends RecyclerView.Adapter<ContactListFragment.Contac
                     imageView.setImageDrawable(errorDrawable);
                 }
             };
-            DisplayUtils.downloadIcon(context, url, target, R.drawable.user, imageView.getWidth(),
+            DisplayUtils.downloadIcon(context, url, target, R.drawable.ic_user, imageView.getWidth(),
                     imageView.getHeight());
         }
     }

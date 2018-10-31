@@ -711,7 +711,7 @@ public abstract class DrawerActivity extends ToolbarActivity implements DisplayU
                         Menu.NONE,
                         MENU_ORDER_ACCOUNT,
                         account.name)
-                        .setIcon(R.drawable.user);
+                    .setIcon(R.drawable.ic_user);
             }
         }
 
