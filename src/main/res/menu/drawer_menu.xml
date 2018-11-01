@@ -36,7 +36,7 @@
             android:title="@string/drawer_item_activities"/>
         <item
             android:id="@+id/nav_favorites"
-            android:icon="@drawable/favorite"
+            android:icon="@drawable/nav_favorites"
             android:orderInCategory="0"
             android:title="@string/drawer_item_favorites"/>
         <item
@@ -108,7 +108,7 @@
             android:title="@string/prefs_add_account"/>
         <item
             android:id="@+id/drawer_menu_account_manage"
-            android:icon="@drawable/settings"
+            android:icon="@drawable/nav_settings"
             android:orderInCategory="2"
             android:title="@string/drawer_manage_accounts"/>
     </group>
@@ -129,12 +129,12 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_contacts"
-            android:icon="@drawable/ic_user"
+            android:icon="@drawable/nav_contacts"
             android:orderInCategory="3"
             android:title="@string/actionbar_contacts"/>
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/settings"
+            android:icon="@drawable/nav_settings"
             android:orderInCategory="4"
             android:title="@string/actionbar_settings"/>
         <item
