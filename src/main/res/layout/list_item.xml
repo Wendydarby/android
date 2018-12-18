@@ -59,17 +59,6 @@
             android:src="@drawable/favorite"/>
 
             <ImageView
-                android:id="@+id/favorite_action"
-                android:layout_width="@dimen/list_item_favorite_action_layout_width"
-                android:layout_height="@dimen/list_item_favorite_action_layout_height"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="@dimen/standard_quarter_margin"
-                android:layout_marginRight="@dimen/standard_quarter_margin"
-                android:contentDescription="@string/favorite"
-                android:src="@drawable/favorite"/>
-            <ImageView
                 android:id="@+id/localFileIndicator"
                 android:layout_width="@dimen/list_item_local_file_indicator_layout_width"
                 android:layout_height="@dimen/list_item_local_file_indicator_layout_height"
