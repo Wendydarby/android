@@ -177,7 +177,7 @@
                         android:layout_marginLeft="@dimen/standard_half_margin"
                         android:background="@android:color/transparent"
                         android:contentDescription="@string/common_cancel"
-                        android:src="@drawable/ic_cancel" />
+                        app:srcCompat="@drawable/ic_cancel" />
 
                 </LinearLayout>
 
